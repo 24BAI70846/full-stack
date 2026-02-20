@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank of Hanjra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="main-title">🏦 Bank of Hanjra</h1>
+
+<div class="container">
+
+    <div class="balance-card">
+        <p>Current Balance</p>
+        <h2 id="balance">₹0</h2>
+    </div>
+
+    <div class="deposit-section">
+        <h3>Add Money</h3>
+
+        <button onclick="addMoney(500)">➕ Add ₹500</button>
+        <button onclick="addMoney(1000)">➕ Add ₹1000</button>
+        <button onclick="addMoney(2000)">➕ Add ₹2000</button>
+    </div>
+
+    <div class="withdraw-section">
+        <h3>Withdraw Money</h3>
+
+        <input type="number" id="withdrawAmount" placeholder="Enter amount">
+        <button onclick="withdrawMoney()">Withdraw</button>
+
+        <p id="message"></p>
+    </div>
+
+    <div class="history">
+        <h3>Transaction History</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
